@@ -1,0 +1,114 @@
+.container-slider {
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+}
+.container-slider .carousel {
+  overflow: hidden;
+}
+ .container-slider .slider {
+  display: inline-flex;
+  transition: transform 0.5s;
+}
+.container-slider section {
+    width: 676px;
+    flex-shrink: 0;
+    height: 364px;
+    padding-right: 0;
+    box-sizing: border-box;
+    /* margin-right: 20px; */
+}
+.container-slider .card {
+  width: 90%;
+  height: 100%;
+  border: 1px solid #80268c;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.controls button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #80268c;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.container-slider .prev {
+    top: 90%;
+    right: 60%;
+}
+.container-slider .prev.show {
+  display: block;
+}
+.container-slider .next {
+    top: 90%;
+    right: 45%;
+
+}
+.container-slider .nav .next.hide {
+  display: none;
+}
+.container-slider .card > * {
+  flex: 1;
+}
+
+.container-slider .card .info {
+  flex-basis: 40px;
+  background: #333;
+  color: #fff;
+  flex-grow: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card-slider{
+    border: 1px solid #B03BBE;
+    border-radius: 20px;
+}
+.container-slider h2{
+    color: #80268c;
+}
+.position{
+    position: relative;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 10px;
+    left: 100px;
+}
+
+
+
+/* the Respoinseve the css Start */
+
+@media only screen and (max-width:767px) {
+ .container-slider section{
+        width: 402px;
+    }
+  .container-slider .prev{
+    top: 91%;
+    right: 78%;
+}
+.container-slider .next{
+    right: 9%;
+    top:91%;
+  }
+  .container-slider {
+    width: 100%;
+  }
+  .card-slider{height:280px;}
+  .whatsapp{left: 15px;}
+
+}
+
+@media only screen and (max-width:1500px) {
+ .container-slider {
+    width: 100%;
+  }
+}

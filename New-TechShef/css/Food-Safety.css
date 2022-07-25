@@ -1,0 +1,45 @@
+:root{
+    --color-second:#B03BBE;
+    --color-second2:#80268c;
+    --line-height:1.9;
+    --object-fit:cover;
+    --background-white:white;
+    --font-size: 22px;
+}
+
+@font-face  {
+    font-family: 'Araboto Arabic';
+    src: url('../font/Araboto.ttf');
+    font-weight: 500;
+}
+
+body{
+    font-family:'Araboto Arabic';
+    margin: 0;
+    padding: 0;
+    direction: rtl;  
+    font-weight: 500;
+}
+p {line-height: var(--line-height); font-size: 16px;}
+img { object-fit: var(--object-fit);}
+
+
+/* the start css about Section */
+.about{ position: relative; z-index: 2; }
+.about-img{ position: relative; opacity: 0.2; }
+.text-about ,.imaes{  position: absolute; top: 10px; }
+.text-about ,.box-text-course ,.box-text-practical{ width : 600px; }
+.text-about h2 ,.box-text-course h2{  font-size: 40px; }
+
+.text-about h2 ,.color {
+    color: var(--color-second2);
+}
+
+.about button{
+    background-color: var(--color-second2);
+    color: white;
+}
+.about button:hover{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,210 @@
+:root{
+    --color-second:#B03BBE;
+    --color-second2:#80268c;
+    --line-height:1.9;
+    --object-fit:cover;
+    --background-white:white;
+    --font-size: 22px;
+}
+
+@font-face  {
+    font-family: 'Araboto Arabic';
+    src: url('../font/Araboto.ttf');
+}
+
+body{
+    background-image: url('../img/img-all.jpg');
+    background-attachment: scroll;
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+    background-position: 0px 80px;
+    font-family:'Araboto Arabic';
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+img { object-fit: var(--object-fit);}
+p ,h5 {line-height: var(--line-height);}
+
+.NavBar , .cont button { background-color: var(--color-second); }
+.navbar .nav-item .nav-link ,.dropdown-item {color: var(--color-second ); }
+
+.navbar .nav-item .nav-link:hover ,.dropdown-item:hover{ color: rgb(50, 205, 50); }
+.cont button{color: var(--background-white)}
+.navbar .container { background-color: var(--background-white) }
+.cont button:hover{ background-color:var(--background-white);  color: var(--color-second); border: solid 1px var(--color-second);}
+
+.team{
+    position: relative;
+    z-index: 1;
+}
+.box-body{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    position: relative;
+    top :0px ;
+    opacity: 0.7;
+    z-index: 2;
+}
+.box-body::after{
+    content:"فريق استشاريي ليفلر";
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    left: 36%;
+    top: 42%;
+    font-weight: bold;
+
+}
+
+/* .text-body{
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+    color: white;
+    z-index: 3;
+
+} */
+
+
+/* the Start  style Section members */
+.members h4 ,.fa-square-check  ,.dependence h2 ,.photo-album h2 ,.footer h5{color: var(--color-second2);}
+.members .card-imges img{opacity: 0.8;}
+.members .card-imges{box-shadow:0px 0px 0px 2px var(--color-second2) ; }
+
+/* the End  style Section members */
+
+
+/*  Start Section the dependence  */
+
+table, td {border: 1px solid var(--color-second2);}
+
+td{ padding: 20px; text-align: center;}
+
+table { width: 100%; padding: 20px; border-collapse: collapse;}
+
+
+.box-text-dependence{font-size: var(--font-size)}
+
+
+/*  End Section the dependence  */
+
+
+
+/*Start Section Section Slider  */
+
+.swiper { width: 100%;  height: 100%;  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 71%;
+    height: 28%;
+}
+
+/*End  Section Section Slider  */
+
+
+/* the Sction is the Album Start */
+.thumb {
+	margin-bottom: 0px;
+}
+.thumb:last-child {
+	margin-bottom: 0;
+}
+/* CSS Image Hover Effects: https://www.nxworld.net/tips/css-image-hover-effects.html */
+.thumb 
+figure img {
+  width: 305px;
+  height: 160px;
+}
+.thumb 
+figure:hover img {
+    filter: grayscale(100%);
+    transition: .3s ease-in-out;
+
+}
+/* the Sction is the Album End */
+
+
+/* The Section Start  Footer And Right */
+.footer{ background-color: #eeedfe; }
+
+.box1-footer{ width: 371px; border-radius: 20px;  box-shadow: 15px 15px 20px 0px #0000001a;}
+
+footer ul li { list-style: none; }
+
+.lists a{ text-decoration: none; color: #3D3D3D;  line-height: 2;}
+
+.lists a:hover{ color: var(--color-second);}
+
+.bolg img{ padding-bottom: 20px; border-radius: 20px;}
+
+.copy{background-color: var(--color-second2);}
+/* The Section End  Footer And Right */
+
+
+.whatsapp{
+    position: fixed;
+    bottom: 10px;
+    left: 100px;
+}
+ 
+p{
+    font-size: 15px;
+}
+
+@media only screen and (max-width:750px) {
+    .counter {
+        font-size: 15px;
+    }
+    .footer-text{
+        width: 100%;
+    }
+    table,td{ padding: 10px; }
+    .photo-album {
+        text-align: center;
+    }
+    .thumb 
+    figure img{
+        width: 405px;
+        height: 250px;
+    };
+    .box1-footer img{ width: 300px;}
+    .box-body::after{
+    font-size: 43px;
+    left: 8%;
+    top: 38%;}
+    .card-imges{margin-right:30px ; margin-bottom: 20px; width: 200px;}
+    p{font-size: 15px;}
+    .box1-footer{ width: 100%;  font-size: 20px;  text-align: center;   margin-bottom: 50px;}
+
+    .bolg img ,.box1-footer{width: 100%;}
+    .whatsapp{left: 40px;}
+    .flex2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+

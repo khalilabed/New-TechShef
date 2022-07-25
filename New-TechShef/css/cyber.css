@@ -1,0 +1,192 @@
+:root{
+    --color-second:#B03BBE;
+    --color-second2:#80268c;
+    --line-height:1.9;
+    --object-fit:cover;
+    --background-white:white;
+    --font-size: 22px;
+}
+
+@font-face  {
+    font-family: 'Araboto Arabic';
+    src: url('../font/Araboto.ttf');
+    font-weight: 500;
+}
+
+
+
+body{
+    font-family:'Araboto Arabic';
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    
+}
+p {
+    line-height: var(--line-height);
+    font-size: 16px;
+}
+
+img { object-fit: var(--object-fit);}
+
+
+
+/* the start css about Section */
+.about{
+    position: relative;
+    z-index: 2;
+
+}
+.about-img{ position: relative; opacity: 0.7; }
+.text-about ,.imaes{  position: absolute; top: 10px; }
+.text-about ,.box-text-course ,.box-text-practical{ width : 600px; }
+.text-about h2 ,.box-text-course h2{  font-size: 40px; }
+
+.text-about h2 {
+    color: var(--color-second2);
+    text-shadow: -2px 0 white, 0 3px white, 1px 0 white, 0 -2px white;
+
+}
+.about button , .box-text-practical button{
+    background-color: var(--color-second2);
+    border: 3px solid black;
+}
+.about button:hover ,.box-text-practical button:hover ,
+/* the start css about Section */
+.cyber1 button:hover{
+    background-color: black;
+    color: white;
+}
+.imaes p{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #000;
+}
+.box-text-course h2 ,.box-img-course p ,.box-text-practical h2 ,.cyber1 button ,
+.Objectives h3 ,.fa-caret-left ,.box-text-content h2 ,.fa-bookmark {
+    color: var(--color-second2);
+}
+
+.cyber1 ,.counter{
+    background-color: var(--color-second2);
+}
+.Objectives .size-card{
+    font-size: 44px;
+}.Objectives .size-card sup{
+    font-size: 20px;
+}
+.cyber2 {
+    background-color: #f4f4f4;
+}
+.cyber2 p:nth-child(2){
+    color: var(--color-second);
+}
+.box-width {
+    width: 750px;
+}
+.counter h2{
+    font-size: 55px;
+}
+.box-img-content img{
+    width:420px;
+    height:400px
+}
+
+/* the Section Start dependence */
+table, td {border: 1px solid var(--color-second2);}
+
+td{ padding: 20px; text-align: center;}
+
+table { width: 100%; padding: 20px; border-collapse: collapse;}
+
+.box-text-dependence{font-size: var(--font-size)}
+
+.box-text-dependence h2{ color: var(--color-second2); }
+
+
+.dependence table img{
+    width: 100px;
+}
+
+
+
+/* the Section End dependence */
+
+.swiper-wrapper img {
+    width: 120px;
+}
+
+
+/* the Start Section Footer  */
+
+.footer{
+    background-image: linear-gradient(to bottom left , #80268c ,black );
+} 
+.footer button ,.position button{
+    color: white;
+    font-weight: bold;
+}
+.footer button:hover { color: black; background-color: var(--background-white); }
+.footer-text{ width: 70%;}
+.footer button{background-color: var(--color-second2);}
+
+
+/* the End Section Footer  */
+
+.position{
+    position: relative;
+}
+.position button {
+    position: fixed;
+    bottom: 5px;
+    left: 20%;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 10px;
+    left: 100px;
+}
+
+
+.position button {
+    background-color: #4e0000;
+}
+.position button:hover{
+    background-color: var(--color-second2);
+    color: var(--background-white);
+}
+
+
+
+
+/* the Respoinsev css  Start */
+@media only screen and (min-width:768px) and (max-width:1200px){
+    /* .output-img img{ width: 100%;  padding-bottom: 50px;}
+    .about-img img{ height: 1050px; width: 100%;}
+    .imaes img{ width: 100%;} */
+    .text-about{  top:45%;  width: 70%; }
+    .text-about h2{  font-size: 30px; }
+    .text-about button{width: 100%;}
+}
+@media only screen and (max-width: 767px) {
+    .box-text-dependence{  margin-right: -50px; }
+    .counter {  font-size: 15px; }
+    .footer-text{  width: 100%;}
+     table,td{ padding: 10px; } 
+    .position button { left: 11px;  width: 95%; height: 70px;}
+    .about-img img{ height: 1050px; width: 100%;}
+    .imaes img{ width: 100%;}
+    .text-about{  top:40%; width: 90%;}
+    .text-about h2{  font-size: 30px;}
+    .text-about button{width: 88%;}
+    .box-text-practical{ width : 100%; }
+    .box-width ,.box-img-content img{ width: 100%; }
+    .dependence table img{width: 50px;}
+    .whatsapp{
+        position: fixed;
+        bottom: 10px;
+        left: 15px;
+    }
+    
+}
+/* the Respoinsev css  Start */
